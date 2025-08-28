@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d3d3d3; /* grey */
+    }
+
+    nav {
+      background-color: #004d00;
+      overflow: hidden;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      background-color: #006600;
+      border-radius: 4px;
+    }
+
+    .section {
+      display: none;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .active {
+      display: block;
+    }
+
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #004d00;
+      margin-bottom: 20px;
+    }
+
+    #home{
+      background-image: url('my-image.jpg');
+      background-size:cover;
+      background-position:center;
+      background-repeat:no repeat;
+      background-attachment: fixed;
+      color: burlywood;
+    }
+    #about{
+      background-image: url('my-image2.jpg');
+      background-size: cover;
+      background-position:cover;
+      background-repeat:no repeat;
+      background-attachment: fixed;
+    }
+   #contact{
+      background-image: url('my-image2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat:no repeat;
+      background-attachment: fixed;
+    }
+    #skills{
+      background-image: url('my-image1.jpg');
+      background-size: auto;
+      background-position: center;
+      background-repeat: no repeat;
+      background-attachment: fixed;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('skills')">Skills</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  <!-- Sections -->
+  <div id="home" class="section active">
+    <img src="your-image.jpg" alt="Profile Picture" class="profile">
+    <h1>Hi, I'm Tifuh noella</h1>
+    <p>Student | Developer | Designer
+      <br><br>
+      I am an aspiring IT Student with some basic skills in <br>
+      Graphics <br>Programming <br> networking and more..
+    </p>
+  </div>
+
+  <div id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      <h2>
+        I'm Tifuh a level 2 student at <b>HERITAGE UNIVERSITY YAOUNDE Cameroon</b></b> and an <BR>internse at <B>ESCHOSYST TECHNOLOGY Training center</B>
+      </h2>
+    </p>
+    <p><b>I am an IT student learning
+      <ul>
+        <li><b>HTML :</b> my ever first project on HTml is "HELLO WORLD",<br> build webpages,<br>build my own personal website and <br>learned fundamental of html there by gaining a solid understandind in html permiting to generate any html code</li>
+        <br>
+        <br>
+        <LI><B>CSS:</B> I Have a good styling ability is it inline, <br>external im here</LI>
+        <br>
+        <LI><b>javascript</b>:build interactive webpages.pages that respond to user iput <br> such as form</LI>
+        <br>
+        <li><b>PHP</b>: working with data bases,i build user authentication like <br>building loggin system ,<br> user registration using PHP</li>
+        <BR>
+        <li><B>graphic designing:</B>Design flyers,make loggos,and many more</li>
+
+      </ul>
+       </p>
+  </div>
+
+  <div id="skills" class="section">
+    <h2>Skills</h2>
+    <ul style="list-style: none; padding: 0;">
+      <p> I have good skills in the below  list. I offer quality work  in the following  task 
+        <br><br>
+        <ul style="list-style: circle; color:rgb(83, 83, 81) ; text-align: left;">
+         <li> graphics,</li> 
+      <br><br>
+          <li>web developments,</li>
+      <br><br>
+         <li>user authentication,</li>
+      <br><br>
+        <li>loggos,</li>
+     <br><br>
+        </ul>
+      
+    <h2 style="color: aliceblue;"> your satisfaction my priority✔✔😊 </h2></p>
+     <ol style="list-style: numbers; text-align: left;">
+       <li>HTML & CSS</li> 
+      <br>
+      <li>JavaScript</li>
+      <br>
+      <li>PHP</li>
+      <br>
+      <li>Graphic Design</li>
+      <br>
+      <li>Object-Oriented Programming</li>
+     </ol>
+      
+    </ul>
+  </div>
+
+  <div id="contact" class="section">
+    <h2>Contact me  <a href="#">here👇👇</a></h2>
+    <p>
+      <a href="#" >tifuhnoella25@mail.com</a> 
+    <br><br>
+     <a href="675426599">whatsapp📳📞</a>
+     <br><br>
+     <a href="#">facebook.com</a>
+     <br><br>
+     <a href="#">tiktik.com</a>
+     <br><br>
+     <a href="#">instagram</a>
+    </p>
+
+    <script>
+      function showSection(id){
+    const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
